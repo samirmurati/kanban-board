@@ -1,38 +1,39 @@
-.App {
+.controls {
+  background-color: lightblue;
+  margin: 0;
+  padding: 10px;
+}
+.controls h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.controls input,
+button {
+  padding: 7px;
+  margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.kanban-board {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.kanban-stage {
+  margin: 10px;
+  padding: 8px;
+  background-color: whitesmoke;
+  width: 150px;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kanban-task {
+  border: 1px solid;
+  padding: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.taskMessage {
+  padding-left: 10px;
+  color: red;
 }
